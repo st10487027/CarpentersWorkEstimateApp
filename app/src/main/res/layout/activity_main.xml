@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Task Selection -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Task Type:"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/taskGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/taskInstallDoor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Install Door" />
+
+            <RadioButton
+                android:id="@+id/taskBuildShelf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Build Shelf" />
+
+            <RadioButton
+                android:id="@+id/taskAssembleFurniture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Assemble Furniture" />
+        </RadioGroup>
+
+        <!-- Material Selection -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Materials:"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <CheckBox
+            android:id="@+id/materialWood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wood (R500)" />
+
+        <CheckBox
+            android:id="@+id/materialNails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nails (R20)" />
+
+        <CheckBox
+            android:id="@+id/materialHinges"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hinges (R30)" />
+
+        <!-- Hours Input -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Hours:"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/hoursInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="e.g. 3"
+            android:inputType="number" />
+
+        <!-- Calculate Button -->
+        <Button
+            android:id="@+id/calculateBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculate Total"
+            android:layout_marginTop="20dp" />
+
+        <!-- Result Display -->
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Estimated Cost: R0.00"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp" />
+    </LinearLayout>
+</ScrollView>
